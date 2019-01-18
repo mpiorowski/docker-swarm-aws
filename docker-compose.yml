@@ -1,0 +1,8 @@
+version: "3"
+services:
+  docker-swarm-1:
+    image: pintailai/pintail-whoami:0.0.1
+    deploy:
+      replicas: 5
+    ports: 
+      - "80:80"
