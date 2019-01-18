@@ -25,3 +25,11 @@ docker -H localhost:2374 stack deploy -c .swarmpit/docker-compose.yml swarm
 
 docker -H localhost:2374 stack services swarm
 ```
+
+### Access swarmpit interface
+
+Enter AWS CloudFormation console and click on created docker swarm. Navigate to Outputs tab, and copy the DefaultDNSTarget.
+
+This is the public url, which allows you to access your docker swarm.
+
+Access http://<DefaultDNSTarget>:8888
