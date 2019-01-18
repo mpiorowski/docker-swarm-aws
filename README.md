@@ -1,4 +1,5 @@
 # Instruction on how to deploy docker swarm on Amazon AWS
+https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
 
 ### Deploy docker swarm using AWS CloudFormation
 
