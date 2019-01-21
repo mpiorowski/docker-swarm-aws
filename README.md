@@ -1,5 +1,5 @@
-# Instruction on how to deploy docker swarm on Amazon AWS
-https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
+# Instruction on how to deploy a docker swarm on Amazon AWS
+source tutorial: https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
 
 ### Deploy docker swarm using AWS CloudFormation
 
@@ -34,3 +34,6 @@ Enter AWS CloudFormation console and click on created docker swarm. Navigate to 
 This is the public url, which allows you to access your docker swarm.
 
 Access http://<"DefaultDNSTarget">:8888
+
+### Manual deployment
+https://caylent.com/high-availability-docker-swarm-aws/
