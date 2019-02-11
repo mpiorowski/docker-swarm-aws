@@ -10,7 +10,6 @@ source tutorial: https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
 The important thing here is to set up Your ssh EC2 KeyPair. If You don't have it, create one by entering EC2 Dashboard and choosing Key Pairs link.
 5. Follow the instruction and in the end click "Create stack". The docker swarm will be set up automatically.
 
-
 ## Connect to your docker swarm 
 
 In order to connect to newly created docker swarm, open ssh tunnel using KeyPair selected during installation process.  
