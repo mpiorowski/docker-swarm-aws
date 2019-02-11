@@ -1,7 +1,7 @@
 # Instruction on how to deploy a docker swarm on Amazon AWS
 source tutorial: https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
 
-### Deploying docker swarm using AWS CloudFormation
+## Deploying docker swarm using AWS CloudFormation
 
 1. Enter https://docs.docker.com/docker-for-aws/. 
 2. Scroll down and click on "Deploy Docker Community Edition (CE) for AWS (stable)" link. This will forward you to Amazon AWS page.
@@ -11,7 +11,7 @@ The important thing here is to set up Your ssh EC2 KeyPair. If You don't have it
 5. Follow the instruction and in the end click "Create stack". The docker swarm will be set up automatically.
 
 
-### Connect to your docker swarm 
+###Connect to your docker swarm 
 
 In order to connect to newly created docker swarm, open ssh tunnel using KeyPair selected during installation process.  
 Ssh-host is the public ip of the docker swarm, visible after you select it.
@@ -23,7 +23,7 @@ docker -H localhost:2374 info
 ```
 Now we can remotely run commands on the server.
 
-### Install swarmpit
+## Install swarmpit
 
 Swarmpit is a lightweight Docker Swarm management UI.
 
@@ -39,7 +39,7 @@ docker -H localhost:2374 stack deploy -c .swarmpit/docker-compose.yml swarm
 docker -H localhost:2374 stack services swarm
 ```
 
-### Access swarmpit interface
+## Access swarmpit interface
 
 Enter AWS CloudFormation console and click on the created docker swarm. Navigate to Outputs tab, and copy the "DefaultDNSTarget".
 
@@ -47,5 +47,5 @@ This is the public url, which allows you to access your docker swarm.
 
 Access http://<"DefaultDNSTarget">:8888
 
-### Manual deployment
+## Manual deployment
 https://caylent.com/high-availability-docker-swarm-aws/
