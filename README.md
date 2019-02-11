@@ -1,19 +1,20 @@
 # Instruction on how to deploy a docker swarm on Amazon AWS
 source tutorial: https://www.youtube.com/watch?v=Io3YMg6CTXA&t=245s
 
-### Deploy docker swarm using AWS CloudFormation
+### Deploying docker swarm using AWS CloudFormation
 
 1. Enter https://docs.docker.com/docker-for-aws/. 
-2. Scroll down and click on "Deploy Docker Community Edition (CE) for AWS (stable)" link. This will forward you to AWS Cloud Formation Console.
+2. Scroll down and click on "Deploy Docker Community Edition (CE) for AWS (stable)" link. This will forward you to Amazon AWS page.
 3. Log into your AWS account.  
-4. You will be redirected to AWS form, where You can specify all the important parameters of the docker stack, like numbers of swarm managers and workers node.
+4. You will be redirected to AWS Cloud Formation Console, where You can specify all the important parameters of the docker stack, like the number of swarm manager and worker nodes.
 The important thing here is to set up Your ssh EC2 KeyPair. If You don't have it, create one by entering EC2 Dashboard and choosing Key Pairs link.
-5. Follow the instruction and ine the end click "Create stack". The docker swarm will be set up automatically.
+5. Follow the instruction and in the end click "Create stack". The docker swarm will be set up automatically.
 
 
 ### Connect to your docker swarm 
 
-In order to connect to newly created docker swarm, open ssh tunnel to aws serer using KeyPair selected during installation process.
+In order to connect to newly created docker swarm, open ssh tunnel using KeyPair selected during installation process.  
+Ssh-host is the public ip of the docker swarm, visible after you select it.
 
 ```
 ssh -i <path-to-ssh-key> -NL localhost:2374:/var/run/docker.sock docker@<ssh-host> &
