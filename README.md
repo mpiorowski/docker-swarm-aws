@@ -12,7 +12,7 @@ The important thing here is to set up Your ssh EC2 KeyPair. If You don't have it
 
 ## Connect to your docker swarm 
 
-In order to connect to newly created docker swarm, open ssh tunnel using KeyPair selected during installation process.  
+In order to connect to Your newly created docker swarm, open ssh tunnel using KeyPair selected during installation process.  
 Ssh-host is the public ip of the docker swarm, visible after you select it.
 
 ```
